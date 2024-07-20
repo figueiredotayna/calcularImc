@@ -1,0 +1,86 @@
+/* a cor neste formato precisa ter o # na frente */
+body{
+    background-color:  #003366;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+/* retira o espaço abaixo das imagens  */
+img{
+    display: block; 
+}
+input{
+    width:460px;
+    height:35px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    margin-top: 6px;
+
+}
+h1{
+    font-size: 36px;
+    color: #333;
+}
+#flex-center{
+    height: 100vh; /*altura do navegador*/
+    display: flex; /*  esssencial*/
+    align-items: center; /*alinhamento vertical*/
+    justify-content: center; /*alinhamento horizontal */
+}
+
+#principal{
+    width: 1000px;
+    height: 560px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    color: #666;
+}
+button{
+    background-color: #003366;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    padding:  10px 45px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #4c52fa;
+}
+
+/* Flexbox(Conjunto de propriedades css para layout)
+(pesquisar sobre no site mdn web docs)*/
+/* W3schools.com site mais objetivo */
+
+/*Media queries*/
+
+@media (max-width:1000px){
+        
+    #foto{
+      display: none;
+    }
+    
+    #principal{
+        width: 70%;
+        justify-content: center;
+    }
+  
+    input{
+        width:100%;
+        height:100%;
+    }
+}
+
+@media(max-widht: 500px){
+
+    h1{
+        font-size: 28px;
+    }
+
+    #principal{
+        width: 90%;
+        border-radius: 10px;
+    }
+}
