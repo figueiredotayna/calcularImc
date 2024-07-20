@@ -41,5 +41,5 @@ function calcularIMC(){
     resultado.innerHTML = `<h3>Seu IMC é ${imc.toFixed(2)} <br> Sua classificação é: ${classificacao}</h3>`
 }
 
-let btn = document.querySelector('#btn');
-btn.addEventListener('click',calcularIMC); //ao clicar no btn aciona a função
+let botao = document.querySelector('#botao');
+botao.addEventListener('click',calcularIMC); //ao clicar no btn aciona a função
